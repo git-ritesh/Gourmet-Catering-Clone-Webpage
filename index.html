@@ -13,18 +13,19 @@
   <nav class="navbar">
     <button class="name-btn">Gourmet au Catering</button>
     <div class="nav-right">
-      <button class="about-btn">About</button>
-    <button class="menu-btn">Menu</button>
-    <button class="contact-btn">Contact</button>
+      <button onclick="window.location.href='#gotoabout';" class="about-btn">About</button>
+      <button onclick="window.location.href='#gotomenu';" class="menu-btn">Menu</button>
+      <button onclick="window.location.href='#gotocontact';" class="contact-btn">Contact</button>
     </div>
   </nav>
   <!-- Background Image -->
   <h1 class="home-txt">
+    <!-- link to the about button -->
+    <span id="gotoabout"></span>
     Le Catering
   </h1>
-<!-- About Page -->
+  <!-- About Page -->
   <div class="about-page">
-
     <!-- Image Box  -->
     <div class="about-img">
       <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="About Image" class="about-img">
@@ -51,9 +52,9 @@
 
     </div>
   </div>
-    
-      <!-- Horizontal rule Divider -->
-      <hr>
+
+  <!-- Horizontal rule Divider and link to the Menu button -->
+  <hr id="gotomenu">
 
       <!-- Menu Page -->
       <div class="menu-page">
@@ -91,7 +92,7 @@
       <hr>
     <!-- Contact Page -->
       <div class="contact-page">
-
+        <span id="gotocontact"></span> 
         <p class="contact-heading">
           Contact
         </p>
